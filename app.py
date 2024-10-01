@@ -20,7 +20,7 @@ port = 1883
 client1 = paho.Client("GIT-HUB")
 client1.on_message = on_message
 
-st.title("MQTT Control")
+st.markdown("<h1 style='color: lightblue;'>MQTT Control</h1>", unsafe_allow_html=True)
 
 if st.button('ON'):
     act1 = "ON"
@@ -50,7 +50,7 @@ if values < 40:
 elif 40 <= values <= 70:
     bar_color = "darkblue"
 else:
-    bar_color = "black"
+    bar_color = "red"
 
 st.markdown(
     f"""
